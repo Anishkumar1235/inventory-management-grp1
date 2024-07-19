@@ -1,0 +1,27 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 26px;
+}
+
+.main-content {
+  margin-left: 200px; 
+  padding: 10px;
+ 
+  margin-top: 10px;
+}
