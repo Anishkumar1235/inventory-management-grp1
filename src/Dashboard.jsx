@@ -84,7 +84,7 @@ const Dashboard = () => {
             <FaMoneyBillWave className="text-green-500 mr-4 text-3xl" />
             <div>
               <h3 className="text-lg font-bold mb-2">Today's Money</h3>
-              <div className="text-2xl">$2365</div>
+              <div className="text-2xl">$25k</div>
               <div className="text-green-500">+55% than last week</div>
             </div>
           </div>
