@@ -1,4 +1,9 @@
 import React from 'react';
+import { Line } from 'react-chartjs-2';
+import { Chart as ChartJS, LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend } from 'chart.js';
+import { FaMoneyBillWave, FaUser, FaUsers, FaChartLine } from 'react-icons/fa';
+
+ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend);
 
 const Dashboard = () => {
   const options = {
@@ -72,7 +77,6 @@ const Dashboard = () => {
   };
 
   return (
- Verma
     <div className="flex h-screen bg-gray-100">
       <main className="flex-1 p-4">
         <div className="grid grid-cols-2 gap-4">
@@ -80,7 +84,7 @@ const Dashboard = () => {
             <FaMoneyBillWave className="text-green-500 mr-4 text-3xl" />
             <div>
               <h3 className="text-lg font-bold mb-2">Today's Money</h3>
-              <div className="text-2xl">$2365</div>
+              <div className="text-2xl">$25k</div>
               <div className="text-green-500">+55% than last week</div>
             </div>
           </div>
@@ -306,10 +310,6 @@ const Dashboard = () => {
 </div>
 
       </main>
-
-    <div>
-      <h2>Dashboard</h2>
- main
     </div>
   );
 };
