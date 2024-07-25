@@ -114,7 +114,7 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="grid grid-cols-3 gap-4 mt-4">
-          <div className="bg-pink-500 p-4 rounded shadow text-white">
+          <div className="bg-pink-600 p-4 rounded shadow text-white">
             <h3 className="text-lg font-bold mb-2">Website Views</h3>
             <Line data={viewsData} options={options} />
             <p className="mt-2">Last Campaign Performance</p>
