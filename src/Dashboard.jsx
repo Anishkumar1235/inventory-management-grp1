@@ -2,7 +2,7 @@ import React from 'react';
 
 const Dashboard = () => {
   return (
- Verma
+
     <div className="flex h-screen bg-gray-100">
       <main className="flex-1 p-4">
         <div className="grid grid-cols-2 gap-4">
@@ -236,11 +236,8 @@ const Dashboard = () => {
 </div>
 
       </main>
+      </div>
 
-    <div>
-      <h2>Dashboard</h2>
- main
-    </div>
   );
 };
 
