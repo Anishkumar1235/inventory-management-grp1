@@ -1,10 +1,11 @@
-/* <<<<<<< HEAD
+HEAD
 body {
   margin: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-=======
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -16,16 +17,15 @@ body {
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
->>>>>>> 6d07f03e3003cce0c03161b374ec4aa9b517a967
+/* >>>>>>> 6d07f03e3003cce0c03161b374ec4aa9b517a967 */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-<<<<<<< HEAD
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-=======
+ HEADcode {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
+ }
+  
 a {
   font-weight: 500;
   color: #646cff;
@@ -78,8 +78,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
->>>>>>> 6d07f03e3003cce0c03161b374ec4aa9b517a967
-} */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+}
