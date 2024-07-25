@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/* <<<<<<< HEAD
 body {
   margin: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -79,4 +79,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 >>>>>>> 6d07f03e3003cce0c03161b374ec4aa9b517a967
-}
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
