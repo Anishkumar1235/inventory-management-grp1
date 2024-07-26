@@ -1,0 +1,7 @@
+/* styles.css */
+.fullscreen-gradient {
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* You can replace these colors with your desired ones */
+    min-height: 100vh;
+    width: 100%;
+  }
+  
