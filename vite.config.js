@@ -8,7 +8,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['react-chartjs-2', 'chart.js'],
+      external: ['react-chartjs-2', 'chart.js','react-icons'],
     },
   },
 });
