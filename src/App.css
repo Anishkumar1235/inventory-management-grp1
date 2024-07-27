@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .app {
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
 .main-content {
   margin-left: 200px; 
   padding: 10px;
- 
+
   margin-top: 10px;
 }
 =======
@@ -69,4 +69,4 @@
 .read-the-docs {
   color: #888;
 }
->>>>>>> 6d07f03e3003cce0c03161b374ec4aa9b517a967
+
