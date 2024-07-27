@@ -1,11 +1,14 @@
 // src/Customer.js
 import React from 'react';
+import PurchaseTable from './components/PurchaseTable';
+
 
 const Customer = () => {
   return (
-    <div>
-      <h2>Customer</h2>
-    </div>
+  <>
+    <PurchaseTable />
+  
+  </>
   );
 }
 
