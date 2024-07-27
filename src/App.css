@@ -23,7 +23,7 @@
 .main-content {
   margin-left: 200px; 
   padding: 10px;
- 
+
   margin-top: 10px;
 }
 
@@ -70,6 +70,7 @@
   color: #888;
 }
 
+
 /* >>>>>>> 6d07f03e3003cce0c03161b374ec4aa9b517a967 */
 
 .chart-container {
@@ -83,3 +84,4 @@
   justify-content: center;
   align-items: center;
 }
+
