@@ -1,12 +1,13 @@
-// src/Customer.js
+// src/Customer.jsx
 import React from 'react';
 
 const Customer = () => {
   return (
     <div>
-      <h2>Customer</h2>
+      <h1>Customer</h1>
+      <p>Content for Customer goes here.</p>
     </div>
   );
-}
+};
 
 export default Customer;
