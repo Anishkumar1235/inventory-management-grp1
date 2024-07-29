@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Bar, Pie } from "react-chartjs-2";
 import {
@@ -122,6 +123,4 @@ const Sales = () => {
   );
 };
 
-export default Sales;
-
-
+export default Sales;
