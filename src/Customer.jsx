@@ -1,49 +1,42 @@
+// src/App.jsx
 import React from 'react';
-import Card from './Card';
-import { FaBox, FaBoxOpen, FaCogs, FaChartLine, FaIndustry, FaChartBar } from 'react-icons/fa';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SideNav from './SideNav';
+import Dashboard from './Dashboard';
+import Customer from './Customer';
+import MoInventory from './MoInventory';
+import AddProducts from './AddProducts';
+import MoBills from './MoBills'; // Import the MoBills component
+import Sales from './Sales'; // Import the Sales component
+import Purchase from './Purchase'; // Import if you have a separate component for Purchase
+import Signup from './Signup';
+import Signin from './Signin';
+import './App.css'; 
 
-const Customer = () => {
-
-  const graphData = [
-    { label: 'Stock', value: 150 },
-    { label: 'Reorder', value: 100 },
-    { label: 'Discontinued', value: 50 },
-  ];
-
+const App = () => {
   return (
-    <div className="p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-    
-      <Card icon={<FaBox />} number="7" description="Products to Reorder" />
-      <Card icon={<FaBoxOpen />} number="365" description="Quantity to be Reorded" />
-      <Card icon={<FaCogs />} number="45" description="Discontinued Product" />
+    <Router>
+      <div className="app flex">
+        <SideNav isOpen={true} /> {/* Always open */}
+        <div className="main-content flex-1 p-4">
+          <Routes>
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/customer" element={<Customer />} />
+            <Route path="/inventory" element={<MoInventory />} />
+            <Route path="/inventory/add-products" element={<AddProducts />} />
+            <Route path="/bills" element={<MoBills />} />
+            <Route path="/bills/purchase" element={<Purchase />} />
+            <Route path="/bills/sales" element={<Sales />} />
+            <Route path="/task" element={<Task />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/signin" element={<Signin />} />
+          </Routes>
+        
+        </div>
+      </div>
+    </Router>
 
-      
-      <Card icon={<FaChartLine />} number="1494" description="Current Stock" type="stock" />
-      <Card icon={<FaChartLine />} number="2" description="Zero Stock Products" type="stock" />
-
-      
-      <Card icon={<FaCogs />} number="45,626" description="Stock Current Value" type="value" />
-
-      
-      <Card icon={<FaIndustry />} number="16" description="Suppliers" type="supplier" />
-      <Card icon={<FaBox />} number="37" description="Products" type="Product" />
-
-    
-      <Card
-        icon={<FaChartBar />}
-        number="Product By Status"
-        description={
-          <>
-            Stock-70%<br />
-            Reorder-27%<br />
-            Discontinued Data-3%
-          </>
-        }
-        type="graph"
-        data={graphData}
-      />
-    </div>
   );
-};
+}
 
-export default Customer;
+export default App;

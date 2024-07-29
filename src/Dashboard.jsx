@@ -1,8 +1,7 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend } from 'chart.js';
-import { FaMoneyBillWave, FaUser, FaUsers, FaChartLine } from 'react-icons/fa';
-
+import { FaMoneyBillWave, FaUser, FaUsers, FaChartLine } from "react-icons/fa";
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend);
 
 const Dashboard = () => {
