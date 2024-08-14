@@ -1,6 +1,6 @@
-
+// src/components/Sales.js
 import React from 'react';
-import { Bar, Pie } from "react-chartjs-2";
+import { Bar, Pie } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -30,7 +30,7 @@ const Sales = () => {
       {
         label: 'Sales',
         data: [65, 59, 80, 81, 56, 55],
-        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+        backgroundColor: '#fef08a',
       },
     ],
   };
@@ -60,7 +60,7 @@ const Sales = () => {
       {
         label: 'Top Selling Products',
         data: [300, 250, 200, 150, 100],
-        backgroundColor: 'rgba(153, 102, 255, 0.6)',
+        backgroundColor: '#fef08a',
       },
     ],
   };
@@ -82,39 +82,38 @@ const Sales = () => {
   };
 
   return (
-    <div className="container mx-auto p-2">
+    <div className="container mx-auto p-4  ">
       <h1 className="text-3xl font-bold mb-4 text-center">Sales </h1>
       
-      <div className="flex flex-wrap -mx-4">
+      <div className="flex flex-wrap -mx-4   ">
         {/* Sales Report Bar Chart */}
-        <div className="chart-container w-full md:w-1/2 p-4 ">
-          <h2 className="text-xl font-semibold mb-2 text-center">Sales Report</h2>
+        <div className="chart-container w-full md:w-1/2 p-4 bg-gradient-to-tr from-emerald-300 to-fuchsia-500 shadow-md">
+          <h2 className="text-xl font-bold mb-2 text-center">Sales Report</h2>
           <div className="w-full max-w-lg mx-auto">
             <Bar data={salesData} />
           </div>
         </div>
         
         {/* Category Wise Stock Pie Chart */}
-        <div className="chart-container w-full md:w-1/2 p-4 ">
-          <h2 className="text-xl font-semibold mb-2 text-center">Category Wise Stock</h2>
+        <div className="chart-container w-full md:w-1/2 p-4 bg-gradient-to-tr from-emerald-300 to-fuchsia-500 shadow-md">
+          <h2 className="text-xl font-bold mb-2 text-center">Category Wise Stock</h2>
           <div className="w-60 max-w-lg mx-auto">
             <Pie data={stockData} />
           </div>
         </div>
         
         {/* Top Selling Products Column Chart */}
-        <div className="chart-container w-full md:w-1/2 p-4">
-          <h2 className="text-xl font-semibold mb-2 text-center">Top Selling Products</h2>
-          <div className="w-full
-           max-w-lg mx-auto">
+        <div className="chart-container w-full md:w-1/2 p-4 bg-gradient-to-tr from-emerald-300 to-fuchsia-500 shadow-md">
+          <h2 className="text-xl font-bold mb-2 text-center">Top Selling Products</h2>
+          <div className="w-full max-w-lg mx-auto">
             <Bar data={topSellingProductsData} options={{ indexAxis: 'y' }} />
           </div>
         </div>
         
         {/* Product Details Pie Chart */}
-        <div className="chart-container w-full md:w-1/2 p-4">
-          <h2 className="text-xl font-semibold mb-2 text-center">Product Details</h2>
-          <div className="w-60 max-w-lg mx-auto">
+        <div className="chart-container w-full md:w-1/2 p-4 bg-gradient-to-tr from-emerald-300 to-fuchsia-500 shadow-md">
+          <h2 className="text-xl font-bold mb-2 text-center">Product Details</h2>
+          <div className="w-60 max-w-lg mx-auto ">
             <Pie data={productDetailsData} />
           </div>
         </div>
@@ -123,4 +122,4 @@ const Sales = () => {
   );
 };
 
-export default Sales;
+export default Sales;
